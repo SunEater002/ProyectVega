@@ -261,3 +261,19 @@ header nav a:hover{
 .flipper.flipped {
     transform: rotateY(180deg);
 }
+
+.preguntas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(243, 243, 243);
+}
+
+.preguntas h2{
+    font-size: 40px;
+    font-family: Questrial, "sans-serif";
+    color: rgb(41, 158, 197);
+    padding: 30px;
+}
