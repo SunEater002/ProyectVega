@@ -175,17 +175,13 @@ header nav a:hover{
     margin-top: 10%;
 }
 
-.sec1{
+.sec1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
-    justify-content: space-around;
-    padding: 20px;
-    border-radius: 50px;
-    gap: 30px;
-    width: 100%;
+    margin-bottom: 20px;
+    width: 400px;
 }
 
 .sec1 img {
@@ -194,6 +190,7 @@ header nav a:hover{
     border-radius: 10px;
     object-fit: cover;
     box-shadow: 0 6px 10px rgba(3, 3, 3, 0.623);
+    cursor: pointer;
 }
 
 .sec1 h2{
@@ -230,4 +227,37 @@ header nav a:hover{
     background-color: rgb(11, 105, 136);
     transition: 0.2s;
     padding: 20px;
+}
+
+
+.flip-container {
+    /*perspective: 1000px;*/
+    margin-bottom: 60%;
+}
+
+.flipper {
+    position: relative;
+    width: 300px; /* Ajusta el ancho según sea necesario */
+    height: 200px; /* Ajusta la altura según sea necesario */
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.flip-container:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flipper.flipped {
+    transform: rotateY(180deg);
 }
