@@ -1,56 +1,79 @@
-
-
+/* Contenedor principal de FAQ */
 .faq-container {
     max-width: 800px;
     margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Título de FAQ */
 .faq-container h2 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
 }
 
+/* Elemento de FAQ */
 .faq-item {
     margin-bottom: 10px;
     border-bottom: 1px solid #ddd;
+    padding: 10px 0;
 }
 
+/* Pregunta de FAQ */
 .faq-question {
     width: 100%;
     padding: 15px;
     text-align: left;
-    background-color:rgb(77, 172, 228);
+    background-color: #4dacdc;
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 25px;
-    color: aliceblue;
+    font-size: 18px;
+    color: #fff;
     transition: background-color 0.3s ease;
-    font-family: Questrial, "sans-serif";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.faq-question:hover {
-    background-color:rgb(77, 172, 228);
-}
-
+/* Icono de FAQ */
 .faq-icon {
-    float: right;
+    font-size: 18px;
+    transition: transform 0.3s ease;
 }
 
+/* Respuesta de FAQ */
 .faq-answer {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-}
-
-.faq-answer p {
-    padding: 15px;
     background-color: #fff;
-    margin: 0;
-    font-size: 20px;
-    font-family: Questrial, "sans-serif";
+    padding: 0 15px;
+    border-radius: 0 0 10px 10px;
 }
 
+/* Texto de la respuesta de FAQ */
+.faq-answer p {
+    padding: 15px 0;
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Estilo cuando el FAQ está activo */
 .faq-item.active .faq-answer {
     max-height: 200px; /* Ajusta según sea necesario */
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+/* Hover en la pregunta de FAQ */
+.faq-question:hover {
+    background-color: #3a9bbf;
 }
