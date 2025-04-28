@@ -1,180 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" class="overflow-x-hidden">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/faq.css">
-    <link rel="website icon" type="jpg"
-    href="./icons/servicios-globales.png">
-    <title>AlumVega</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlumVega</title>
+  <link rel="icon" type="png"
+    href="/icons/servicios-globales.png"/>
+  <link rel="stylesheet" href="/styles.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
-<body>
 
-    <header class="header">
-        <h1>AlumVega S.A de C.V</h1>
-        <nav>
-         <ul>
-            <a href="#inicio">INICIO</a>
-            <a href="#servicios">SERVICIOS</a>
-            <a href="#preguntas">PREGUNTAS FRECUENTES</a>
-            <a href="#ubicacion">UBICACION</a>
-            <a href="#contacto">CONTACTO</a>
-        </ul>
-    </nav>
+  <body class="bg-gray-50 flex flex-col min-h-screen w-full font-sans overflow-x-hidden">
 
-    <section class="video">
-        <video src="./video/5744424-uhd_3840_2160_30fps.mp4" autoplay muted loop width="500px" height="500px">hola</video>
-        <div class="video-overlay">
-            <h2>Servicio de calidad garantizado!</h2>
-            <a href="tel:5565801501" target="_blank"><button class="boton1">¡Contáctanos!</button></a>
-        </div>
-    </section>
-
+    <!-- Header -->
+    <header class="w-full text-center py-16 bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 text-white rounded-b-full shadow-lg">
+      <h1 class="text-4xl md:text-6xl font-bold text-center mb-4">¡ALUM VEGA S.A DE C.V!</h1>
+      <blockquote class="italic text-center text-lg md:text-xl text-slate-100 mb-10">
+        “¡Servicio de calidad garantizado!”
+      </blockquote>
+      <a href="#servicios" class="inline-block m-1 bg-teal-600 hover:bg-teal-500 hover:scale-105 text-white font-semibold py-3 px-6 rounded-2xl shadow-lg transition-all duration-300">
+        SERVICIOS
+      </a>
+      <a href="#contacto" class="inline-block m-1 bg-teal-600 hover:bg-teal-500 hover:scale-105 text-white font-semibold py-3 px-6 rounded-2xl shadow-lg transition-all duration-300">
+        CONTACTO
+      </a>
     </header>
 
-    <main>
+    <div id="inicio"></div>
 
-        <section class="section1" id="inicio">
-            <h1>Bienvenidos a AlumVega S.A de C.V</h1>
-            <p>En Alumvega S.A de C.V, ofrecemos soluciones integrales en construcción, garantizando calidad y confianza en cada proyecto.</p>
-        </section>
-
-        <section class="servicios">
-
-            <h1>SERVICIOS</h1>
-
-            <div class="carousel">
-                <section class="sec1" id="servicios">
-                    <div class="flip-container">
-                        <div class="flipper">
-                            <div class="front">
-                                <img src="./img/img1.png" alt="img1">  
-                            </div>
-                            <div class="back">
-                                <img src="./img/img1.1.png.jpg" alt="img1_back">  
-                            </div>
-                        </div>
-                    </div>
-                    <h2>CANCELERIA</h2>
-                 <h3>
-                    <ul>
-                        <li>Colocacion de vidrio y lunas</li>
-                        <li>Canceleria de aluminio</li>
-                        <li>Venta e instalcion de abre puertas de garage</li>
-                    </ul>
-                 </h3>
-                    <p>Instalamos ventanas de aluminio de alta calidad, garantizando durabilidad y eficiencia energética.</p>
-                </section>
-    
-                <section class="sec1">
-                    <div class="flip-container">
-                        <div class="flipper">
-                            <div class="front">
-                                <img src="./img/img2.png" alt="img1">  
-                            </div>
-                            <div class="back">
-                                <img src="./img/img2.2.png.jpg" alt="img1_back">  
-                            </div>
-                        </div>
-                    </div>
-                    <h2>ALUMINIO</h2>
-                  <h3>
-                    <ul>
-                        <li>Mosquiteros</li>
-                        <li>Vidrio templado</li>
-                        <li>Domos</li>
-                    </ul>
-                  </h3>
-                    <p>Ofrecemos herrería a medida y reparación con materiales de calidad y diseños personalizados.</p>
-                </section>
-    
-                <section class="sec1">
-                    <div class="flip-container">
-                        <div class="flipper">
-                            <div class="front">
-                                <img src="./img/img3.png" alt="img1">  
-                            </div>
-                            <div class="back">
-                                <img src="./img/img3.3.jpg" alt="img1_back">  
-                            </div>
-                        </div>
-                    </div>
-                    <h2>HERRERIA</h2>
-                    <h3><ul>
-                        <li>Puertas Automaticas</li>
-                        <li>Automatizacion de portones</li>
-                        <li>Malla ciclonica</li>
-                        <li>Barandeles de acero inoxidable</li>
-                        <li>Cercas electricas</li>
-                        <li>Albañileria</li>
-                        <li>Plomeria</li>
-                    </ul></h3>
-                    <p>Brindamos mantenimiento general para prolongar la vida útil de sus instalaciones y detectar problemas a tiempo.</p>
-                </section>
-
-            </div>
-        </section>
-
-        <section class="preguntas" id="preguntas">
-            <section class="faq-container" id="faq-container">
-                <h2>Preguntas Frecuentes</h2>
-                <div class="faq-item">
-                    <button class="faq-question">¿Qué tipo de ventanas de aluminio ofrecen? <span class="faq-icon">+</span></button>
-                    <div class="faq-answer">
-                        <p>Ofrecemos una amplia variedad de ventanas de aluminio, incluyendo diseños personalizados y opciones de doble vidrio.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">¿Realizan trabajos de herrería a medida? <span class="faq-icon">+</span></button>
-                    <div class="faq-answer">
-                        <p>Sí, realizamos trabajos de herrería a medida, adaptándonos a las necesidades específicas de cada cliente.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">¿Cómo puedo solicitar un presupuesto?<span class="faq-icon">+</span></button>
-                    <div class="faq-answer">
-                        <p>Puedes solicitar un presupuesto a través de nuestro formulario de contacto en la página web o llamándonos directamente.</p>
-                    </div>
-                </div>
-            </section>
-        </section>
-
-        <section class="frase" id="proyectos">
-            <p>“El servicio de Alumvega fue excepcional. Su atención al detalle y profesionalismo hicieron de nuestra remodelación una experiencia fácil y satisfactoria.”</p>
-        </section>
-
-    <section class="redes" id="ubicacion">
-        <h2>UBICACION</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d939.2989024953963!2d-99.16525126902906!3d19.66165836343285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1738653547717!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p>Alumvega S.A de C.V Cuautitlán Mexico</p>
+    <!-- Section 1 -->
+    <section class="bg-gradient-to-t from-blue-300 via-blue-200 to-blue-100 rounded-lg mx-4 my-8 p-8 flex flex-col items-center text-center font-sans">
+    <h1 class="text-3xl md:text-5xl font-bold text-cyan-600 mb-4">Bienvenidos a AlumVega S.A de C.V</h1>
+    <p class="text-lg md:text-2xl text-gray-700">
+      En Alumvega S.A de C.V, ofrecemos soluciones integrales en construcción, garantizando calidad y confianza en cada proyecto.
+    </p>
     </section>
 
+    <div id="servicios"></div>
 
-    </main>
-
-    <section class="social" id="contacto">
-        <h2>Siguenos en redes sociales</h2>
-        <a href="https://www.facebook.com/share/1Athn7jLFo/" target="_blank">
-        <img src="./icons/facebook2 (1).png" alt="Facebook"></a>
-        <a href="tel:5565801501" target="_blank">
-        <img src="./icons/whatsapp (1).png" alt="WhatsApp"></a>
-        <a href="https://www.tiktok.com/@lalovega4?_t=ZM-8skJIh0st9B&_r=1" target="_blank">
-        <img src="./icons/tiktok-removebg-preview (1).png" alt="Tiktok"></a>
+    <style>
+      .acordeon {
+        transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.4s cubic-bezier(0.4,0,0.2,1);
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        pointer-events: none;
+      }
+      .acordeon.open {
+        max-height: 500px; /* Ajusta según el contenido máximo esperado */
+        opacity: 1;
+        pointer-events: auto;
+      }
+    </style>
+    
+    <!-- 2. Sección de servicios -->
+    <section class="bg-gray-100 rounded-lg mx-4 my-8 p-8" id="servicios"
+        data-aos="fade-up" data-aos-offset="100" data-aos-delay="300">
+      <h1 class="text-2xl md:text-4xl font-bold text-cyan-600 text-center mb-8">Nuestros Servicios</h1>
+      <div class="flex flex-col md:flex-row gap-8 justify-center">
+    
+        <!-- Servicio 1 -->
+        <article class="group flex flex-col items-center bg-white rounded-lg shadow-md p-6 w-full md:w-1/3"
+          data-aos="fade-right" data-aos-offset="200" data-aos-delay="300">
+          <div class="relative w-full h-64 mb-4 overflow-hidden rounded-lg shadow">
+            <img src="/img/img1.1.png.jpg"
+              alt="Servicio 1"
+              class="absolute inset-0 w-full h-full object-cover rounded-lg shadow transition-opacity duration-300 group-hover:opacity-0" />
+            <img src="/img/img1.png"
+              alt="Servicio 1 Hover"
+              class="absolute inset-0 w-full h-full object-cover rounded-lg shadow opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold text-cyan-600 mb-2">CANCELERIA</h2>
+          <p class="text-gray-600 mb-4 text-center">Instalamos ventanas de aluminio de alta calidad, garantizando durabilidad y eficiencia energética.</p>
+          <button onclick="toggleLista('servicio1-lista')" class="bg-cyan-600 hover:bg-cyan-800 text-white py-2 px-6 rounded transition mb-2 md:mb-0 mt-4">Saber más</button>
+          <ul id="servicio1-lista" class="acordeon mt-4 text-left w-full bg-cyan-50 rounded-lg p-4 shadow-inner space-y-2">
+            <li class="flex items-center"><span class="w-2 h-2 bg-cyan-600 rounded-full mr-2"></span> Ventanas corredizas</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-cyan-600 rounded-full mr-2"></span> Puertas de aluminio</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-cyan-600 rounded-full mr-2"></span> Canceles de baño</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-cyan-600 rounded-full mr-2"></span> Fachadas de cristal</li>
+          </ul>
+        </article>
+    
+        <!-- Servicio 2 -->
+        <article class="group flex flex-col items-center bg-white rounded-lg shadow-md p-6 w-full md:w-1/3"
+          data-aos="fade-down" data-aos-offset="200" data-aos-delay="300">
+          <div class="relative w-full h-64 mb-4 overflow-hidden rounded-lg shadow">
+            <img src="/img/img2.2.png.jpg"
+              alt="Servicio 2"
+              class="absolute inset-0 w-full h-full object-cover rounded-lg shadow transition-opacity duration-300 group-hover:opacity-0" />
+            <img src="/img/img2.png"
+              alt="Servicio 2 Hover"
+              class="absolute inset-0 w-full h-full object-cover rounded-lg shadow opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold text-cyan-600 mb-2">ALUMINIO</h2>
+          <p class="text-gray-600 mb-4 text-center">Ofrecemos herrería a medida y reparación con materiales de calidad y diseños personalizados.</p>
+          <button onclick="toggleLista('servicio2-lista')" class="bg-cyan-600 hover:bg-cyan-800 text-white py-2 px-6 rounded transition mb-2 md:mb-0 mt-4">Saber más</button>
+          <ul id="servicio2-lista" class="acordeon mt-4 text-left w-full bg-cyan-50 rounded-lg p-4 shadow-inner space-y-2">
+            <li class="flex items-center"><span class="w-2 h-2 bg-cyan-600 rounded-full mr-2"></span> Barandales de aluminio</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-cyan-600 rounded-full mr-2"></span> Puertas plegables</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-cyan-600 rounded-full mr-2"></span> Mosquiteros</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-cyan-600 rounded-full mr-2"></span> Domos y techos</li>
+          </ul>
+        </article>
+    
+        <!-- Servicio 3 -->
+        <article class="group flex flex-col items-center bg-white rounded-lg shadow-md p-6 w-full md:w-1/3"
+          data-aos="fade-left" data-aos-offset="200" data-aos-delay="300">
+          <div class="relative w-full h-64 mb-4 overflow-hidden rounded-lg shadow">
+            <img src="/img/img3.3.jpg"
+              alt="Servicio 3"
+              class="absolute inset-0 w-full h-full object-cover rounded-lg shadow transition-opacity duration-300 group-hover:opacity-0" />
+            <img src="/img/img3.png"
+              alt="Servicio 3 Hover"
+              class="absolute inset-0 w-full h-full object-cover rounded-lg shadow opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold text-cyan-600 mb-2">HERRERIA</h2>
+          <p class="text-gray-600 mb-4 text-center">Brindamos mantenimiento general para prolongar la vida útil de sus instalaciones y detectar problemas a tiempo.</p>
+          <button onclick="toggleLista('servicio3-lista')" class="bg-cyan-600 hover:bg-cyan-800 text-white py-2 px-6 rounded transition mb-2">Saber más</button>
+          <ul id="servicio3-lista" class="acordeon mt-4 text-left w-full bg-cyan-50 rounded-lg p-4 shadow-inner space-y-2">
+            <li class="flex items-center"><span class="w-2 h-2 bg-cyan-600 rounded-full mr-2"></span> Portones</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-cyan-600 rounded-full mr-2"></span> Rejas de seguridad</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-cyan-600 rounded-full mr-2"></span> Escaleras metálicas</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-cyan-600 rounded-full mr-2"></span> Puertas de herrería</li>
+          </ul>
+        </article>
+    
+      </div>
     </section>
 
-    <footer class="footer">
-        <section class="pagina">
-            <h1>Sobre nosotros</h1>
-            <p>Alumvega S.A de C.V es una empresa ubicada en Cuautitlán, México, dedicada a la maquilación e instalación de ventanas de aluminio, así como a la herrería, pintura, plomería y mantenimiento en general. Con años de experiencia en el sector de la construcción, nos especializamos en proporcionar soluciones integrales que cumplen con los más altos estándares de calidad. Nuestro equipo está comprometido con la satisfacción del cliente, ofreciendo atención personalizada y asesoría durante todo el proceso. Trabajamos con materiales de primera y contamos con un personal altamente calificado, lo que nos permite garantizar resultados que superan las expectativas. En Alumvega, tu proyecto es nuestra prioridad.</p>
-            <a href="tel:5565801501" target="_blank"><button>¡Contactanos Hoy!</button></a>
-        </section>
+    <!-- Preguntas Frecuentes -->
+    <section class="flex flex-col items-center text-center py-12 bg-gray-200 rounded-lg mx-4 my-8"
+          data-aos="fade-down" data-aos-offset="200" data-aos-delay="300">
+      <h2 class="text-2xl md:text-4xl font-bold text-cyan-600 mb-6">Preguntas Frecuentes</h2>
+      <div class="max-w-2xl">
 
-        <h3>© 2024 Alumvega S.A de C.V</h3>
+        <div class="mb-4">
+          <h3 class="font-bold text-gray-800">¿Donde se ubican?</h3>
+          <p class="text-gray-600">Estamos ubicados en Manzana 013, San Blas 2, 54870 Cuautitlan Mexico.</p>
+        </div>
+        <div class="mb-4">
+          <h3 class="font-bold text-gray-800">¿Donde puedo cotizar un servicio?</h3>
+          <p class="text-gray-600">Puede comunicarse con nosotros a traves de nuestras redes sociales, o enviando un whatsapp.</p>
+        </div>
+      </div>
+    </section>
 
+    <!-- Frase destacada -->
+    <section class="bg-cyan-500 text-white text-center text-2xl md:text-3xl font-semibold py-12 px-4 rounded-2xl mx-4 my-8"
+        data-aos="fade-up" data-aos-offset="200" data-aos-delay="300">
+      “El servicio de Alumvega fue excepcional. Su atención al detalle y profesionalismo hicieron de nuestra remodelación una experiencia fácil y satisfactoria.”
+    </section>
+
+    <div id="contacto"></div>
+
+    <!-- Redes Sociales -->
+    <section class="flex flex-col items-center bg-gray-100 rounded-lg mx-4 my-8 p-8"
+        data-aos="fade-up" data-aos-offset="200" data-aos-delay="300">
+      <h2 class="text-2xl md:text-4xl font-bold text-cyan-700 mb-4">Síguenos en redes</h2>
+      <p class="text-xl text-gray-600 mb-6 text-center">¡Envianos un mensaeje y nos pondremos en contacto!</p>
+      <div class="flex flex-row gap-8">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="/icons/facebook2 (1).png" alt="Facebook" class="w-16 h-16 hover:scale-110 transition">
+        </a>
+        <a href="https://www.tiktok.com" target="_blank">
+          <img src="/icons/tiktok-removebg-preview (1).png" alt="TikTok" class="w-16 h-16 hover:scale-110 transition">
+        </a>
+        <a href="https://www.whatsapp.com" target="_blank">
+          <img src="/icons/whatsapp (1).png" alt="WhatsApp" class="w-16 h-16 hover:scale-110 transition">
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cyan-500 text-white flex flex-col items-center py-8 mt-auto">
+      <div class="mb-4">
+        <h3 class="text-2xl font-bold">AlumVega</h3>
+      </div>
+      <div class="text-center mb-4">
+        <h1 class="text-xl md:text-3xl font-bold">Sobre nosotros</h1>
+        <p class="text-center text-lg">Alumvega S.A de C.V es una empresa ubicada en Cuautitlán, México, dedicada a la maquilación e instalación de ventanas de aluminio, así como a la herrería, pintura, plomería y mantenimiento en general.</p>
+      </div>
+      <div class="text-center text-lg">&copy; 2024 C.O.R.T. Todos los derechos reservados.</div>
     </footer>
 
-    <script src = "./js/index.js"></script>
-    
-</body>
+    <!-- JS al final para mejor performance -->
+    <script type="module" src="/index.js"></script>
+  </body>
+  <script>
+    AOS.init({
+      duration: 1000, // Duración de la animación en milisegundos
+      easing: 'ease-out-cubic', // Tipo de animación
+      once: false, // La animación ocurre solo una vez
+    });
+  </script>
+<script>
+  // Solo permite un listado abierto a la vez con transición suave
+  function toggleLista(id) {
+    document.querySelectorAll('section ul[id^="servicio"]').forEach(ul => {
+      if (ul.id !== id) ul.classList.remove('open');
+    });
+    const lista = document.getElementById(id);
+    lista.classList.toggle('open');
+  }
+</script>
+
 </html>
